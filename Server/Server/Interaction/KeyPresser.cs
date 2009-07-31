@@ -30,7 +30,14 @@ namespace Server
                 else if (s == "{MINIMIZE}")
                 {
                     SendKeys.SendWait("% ");
-                    SendKeys.SendWait("m");                  
+                    if (System.Globalization.CultureInfo.CurrentCulture.Name == "pl-PL")
+                    {
+                        SendKeys.SendWait("m");
+                    }
+                    else
+                    {
+                        SendKeys.SendWait("n");
+                    }
                 }
                 else
                 {
