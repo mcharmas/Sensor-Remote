@@ -56,6 +56,8 @@ namespace Server
             this.trackBarSensitivity = new System.Windows.Forms.TrackBar();
             this.label3 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.comboBoxMediaPlayer = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
@@ -65,8 +67,7 @@ namespace Server
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.startToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.label9 = new System.Windows.Forms.Label();
-            this.comboBoxMediaPlayer = new System.Windows.Forms.ComboBox();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1.SuspendLayout();
             this.tabs.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -344,6 +345,24 @@ namespace Server
             this.tabPage3.Text = "Settings";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // comboBoxMediaPlayer
+            // 
+            this.comboBoxMediaPlayer.FormattingEnabled = true;
+            this.comboBoxMediaPlayer.Location = new System.Drawing.Point(108, 15);
+            this.comboBoxMediaPlayer.Name = "comboBoxMediaPlayer";
+            this.comboBoxMediaPlayer.Size = new System.Drawing.Size(182, 21);
+            this.comboBoxMediaPlayer.TabIndex = 3;
+            this.comboBoxMediaPlayer.SelectedIndexChanged += new System.EventHandler(this.comboBoxMediaPlayer_SelectedIndexChanged);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(6, 18);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(74, 13);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "Media Player: ";
+            // 
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
@@ -408,42 +427,32 @@ namespace Server
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem2,
             this.startToolStripMenuItem,
             this.toolStripMenuItem1});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(110, 48);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 92);
             // 
             // startToolStripMenuItem
             // 
             this.startToolStripMenuItem.Name = "startToolStripMenuItem";
-            this.startToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.startToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.startToolStripMenuItem.Text = "Start";
             this.startToolStripMenuItem.Click += new System.EventHandler(this.startToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(109, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.toolStripMenuItem1.Text = "Exit";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
-            // label9
+            // toolStripMenuItem2
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 18);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(74, 13);
-            this.label9.TabIndex = 2;
-            this.label9.Text = "Media Player: ";
-            // 
-            // comboBoxMediaPlayer
-            // 
-            this.comboBoxMediaPlayer.FormattingEnabled = true;
-            this.comboBoxMediaPlayer.Location = new System.Drawing.Point(108, 15);
-            this.comboBoxMediaPlayer.Name = "comboBoxMediaPlayer";
-            this.comboBoxMediaPlayer.Size = new System.Drawing.Size(182, 21);
-            this.comboBoxMediaPlayer.TabIndex = 3;
-            this.comboBoxMediaPlayer.SelectedIndexChanged += new System.EventHandler(this.comboBoxMediaPlayer_SelectedIndexChanged);
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem2.Text = "Show";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // MainWindow
             // 
@@ -522,6 +531,7 @@ namespace Server
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox comboBoxMediaPlayer;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
 
     }
 }

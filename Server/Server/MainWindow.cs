@@ -309,5 +309,11 @@ namespace Server
             s.stop();
             s.start();
         }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Show();
+            WindowState = FormWindowState.Normal;
+        }
     }
 }
