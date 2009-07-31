@@ -51,6 +51,12 @@
         "Entry"
         {
         "MsmKey" = "8:_54F6BD840FF525805446DFE86711EE71"
+        "OwnerKey" = "8:_8049BBA7F8CB4D0A861CE97FB1DB3D5D"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_54F6BD840FF525805446DFE86711EE71"
         "OwnerKey" = "8:_D5D0A46C74054D3DB647E20CC9F5740C"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -74,6 +80,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_736F4E3FFDD4D097B4F0382B3CB7CDA6"
+        "OwnerKey" = "8:_8049BBA7F8CB4D0A861CE97FB1DB3D5D"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_8049BBA7F8CB4D0A861CE97FB1DB3D5D"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -92,8 +104,20 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_82FFE8B70AADD1FED4B58A9E29C2037D"
+        "OwnerKey" = "8:_8049BBA7F8CB4D0A861CE97FB1DB3D5D"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_91B84EE33E3271B4D544019ABD789827"
         "OwnerKey" = "8:_DFEFEF963904306464701278BDACC7F6"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_91B84EE33E3271B4D544019ABD789827"
+        "OwnerKey" = "8:_8049BBA7F8CB4D0A861CE97FB1DB3D5D"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -111,6 +135,12 @@
         "Entry"
         {
         "MsmKey" = "8:_A81BE364D39C32C9831BEC0DF839DCD5"
+        "OwnerKey" = "8:_D5D0A46C74054D3DB647E20CC9F5740C"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_A81BE364D39C32C9831BEC0DF839DCD5"
         "OwnerKey" = "8:_82FFE8B70AADD1FED4B58A9E29C2037D"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -123,7 +153,7 @@
         "Entry"
         {
         "MsmKey" = "8:_A81BE364D39C32C9831BEC0DF839DCD5"
-        "OwnerKey" = "8:_D5D0A46C74054D3DB647E20CC9F5740C"
+        "OwnerKey" = "8:_8049BBA7F8CB4D0A861CE97FB1DB3D5D"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -153,6 +183,12 @@
         "Entry"
         {
         "MsmKey" = "8:_DFEFEF963904306464701278BDACC7F6"
+        "OwnerKey" = "8:_8049BBA7F8CB4D0A861CE97FB1DB3D5D"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_DFEFEF963904306464701278BDACC7F6"
         "OwnerKey" = "8:_D5D0A46C74054D3DB647E20CC9F5740C"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -166,6 +202,12 @@
         {
         "MsmKey" = "8:_E749AF426B62C6671D3FFBD0D61A2C45"
         "OwnerKey" = "8:_D5D0A46C74054D3DB647E20CC9F5740C"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E749AF426B62C6671D3FFBD0D61A2C45"
+        "OwnerKey" = "8:_8049BBA7F8CB4D0A861CE97FB1DB3D5D"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -206,7 +248,7 @@
         "DisplayName" = "8:Release"
         "IsDebugOnly" = "11:FALSE"
         "IsReleaseOnly" = "11:TRUE"
-        "OutputFilename" = "8:Release\\SensorRemote.cab"
+        "OutputFilename" = "8:..\\..\\Bin\\SensorRemote.cab"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
         "SignOutput" = "11:FALSE"
@@ -412,11 +454,11 @@
                 {
                     "_91B84EE33E3271B4D544019ABD789827"
                     {
-                    "Name" = "8:System.Drawing.DLL"
+                    "Name" = "8:System.Drawing.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:System.Drawing.DLL"
+            "SourcePath" = "8:System.Drawing.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_9B3DDC125AF94C4E971B65DABD2ACD74"
@@ -563,7 +605,7 @@
         {
             "{605BE39E-5046-48BD-AEC0-63C3A46626D5}:_8049BBA7F8CB4D0A861CE97FB1DB3D5D"
             {
-            "SourcePath" = "8:..\\Test\\obj\\Release\\SensorRemote.exe"
+            "SourcePath" = "8:..\\Remote\\obj\\Release\\SensorRemote.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_9B3DDC125AF94C4E971B65DABD2ACD74"
