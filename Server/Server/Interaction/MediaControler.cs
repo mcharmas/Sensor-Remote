@@ -13,8 +13,7 @@ namespace Server
         private static string[] mediaPlayers = new string[2];
         public MediaControler()
         {
-            mediaPlayers[0] = "Windows Media Player";
-            mediaPlayers[1] = "Others (not supported)";
+            players();
             if (Properties.Settings.Default.mediaPlayer == "Windows Media Player")
             {
                 mp = new WMPControl();
@@ -73,6 +72,8 @@ namespace Server
         /// <returns>Array of available players.</returns>
         public static string[] players()
         {
+            mediaPlayers[0] = "Windows Media Player";
+            mediaPlayers[1] = "Others (not supported)";
             return mediaPlayers;
         }
     }

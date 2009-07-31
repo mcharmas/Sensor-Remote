@@ -33,7 +33,7 @@ namespace Server
         /// Function called when client connects / disconnects
         /// </summary>
         public ClientConnectionChanged cc = null;
-        
+
         /// <summary>
         /// Function called when server started / stopped.
         /// </summary>
@@ -50,7 +50,7 @@ namespace Server
         /// Function used to sent data.
         /// </summary>
         /// <param name="str">Input string.</param>
-        abstract protected void send(string str);     
+        abstract protected void send(string str);
 
         /// <summary>
         /// Starts data processor.
@@ -67,11 +67,13 @@ namespace Server
         /// </summary>
         virtual public void stop()
         {
+
             dp.stop();
             dh -= new DataHandler(dp.process);
             dp = null;
+
         }
-        
+
         /// <summary>
         /// Authenticates connection.
         /// </summary>

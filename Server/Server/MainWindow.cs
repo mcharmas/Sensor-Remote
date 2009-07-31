@@ -25,7 +25,8 @@ namespace Server
         {
             InitializeComponent();
             servInit();
-            s.start();
+            
+
             updateStatusBar(false);
 
             textBoxIP.Text = Properties.Settings.Default.ip;
@@ -52,6 +53,8 @@ namespace Server
                 comboBoxMediaPlayer.Items.Add(mp);
             }
             comboBoxMediaPlayer.Text = Properties.Settings.Default.mediaPlayer;
+
+            s.start();
         }
 
         /// <summary>
@@ -306,8 +309,12 @@ namespace Server
         {
             Properties.Settings.Default.mediaPlayer = comboBoxMediaPlayer.Text;
             Properties.Settings.Default.Save();
-            s.stop();
-            s.start();
+
+            if (s.isRunning())
+            {
+                s.stop();
+                s.start();
+            }
         }
 
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
