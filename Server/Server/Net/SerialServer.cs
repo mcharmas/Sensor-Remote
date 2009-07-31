@@ -92,7 +92,12 @@ namespace Server
             base.stop();
 
             serverStatusChanged(false);
-            sp.Close();
+
+            try
+            {
+                sp.Close();
+            }
+            catch { }
             //readThread.Abort();
         }
 
